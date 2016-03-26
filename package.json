@@ -1,0 +1,27 @@
+{
+  "name": "lullabies",
+  "version": "1.0.0",
+  "description": "Chillax with YouTube.",
+  "main": "index.js",
+  "scripts": {
+    "build": "browserify index.js -o public/index.js",
+    "start": "npm run build && http-server",
+    "test": "tape test/**/*.spec.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/qubyte/lullabies.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/qubyte/lullabies/issues"
+  },
+  "homepage": "https://github.com/qubyte/lullabies#readme",
+  "devDependencies": {
+    "browserify": "13.0.0",
+    "eslint": "2.5.1",
+    "http-server": "^0.9.0",
+    "tape": "4.5.1"
+  }
+}
